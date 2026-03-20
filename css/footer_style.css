@@ -1,0 +1,35 @@
+footer {
+    background-color: #597BC0;
+    color: #fff;
+    padding: 30px 20px 20px 20px;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+}
+
+.max-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.vk-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.mail-icon {
+    width: 64px;
+    height: 64px;
+}
+
+.icons {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info a {
+    text-decoration: none;
+    color: #fff;
+}
