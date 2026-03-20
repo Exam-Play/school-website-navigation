@@ -95,11 +95,11 @@ main {
     }
 
     .school-logo-img img {
-        width: 80%;
+        width: 100%;
     }
     
     .school-info p {
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
 
     .menu-toggle {
