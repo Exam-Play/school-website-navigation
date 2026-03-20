@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-image: url("blue_background.jpg"); 
+    background-size: cover;
+    opacity: 0.8;
+    border-radius: 0 0 30px 30px;
+    color: white;
+    padding: 20px 80px;
+    display: flex;
+}
+
+.school-logo-img {
+    width: 250px;
+    height: auto;
+}
+
+.header-main {
+    justify-content: space-between;
+}
+
+.school-info p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.school-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.special {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.special a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    gap: 10px;
+}
+
+.special p {
+    font-weight: bold;
+}
+
+#glazd {
+    width: 50px;
+}
