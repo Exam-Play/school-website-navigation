@@ -1,4 +1,4 @@
-@media (max-width: 1080px) {
+@media (max-width: 768px) {
     body {
         margin: 0;
         padding: 0;
@@ -20,6 +20,7 @@
     .menu-toggle-div {
         display: flex;
         justify-content: right;
+        -webkit-tap-highlight-color: transparent;
     }
     
     .menu-toggle {
@@ -127,5 +128,6 @@
         cursor: pointer;
         font-size: 23px;
         color: #6ab9ff;
+        -webkit-tap-highlight-color: transparent;
     }
 }

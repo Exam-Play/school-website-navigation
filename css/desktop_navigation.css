@@ -39,6 +39,10 @@ nav {
     width: 100%;
 }
 
+.mobile-menu a {
+    -webkit-tap-highlight-color: transparent;
+}
+
 .menu-item {
     font-family: Inter, sans-serif;
     list-style: none;
