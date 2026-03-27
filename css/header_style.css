@@ -12,6 +12,7 @@ header {
     color: white;
     padding: 20px 80px;
     display: flex;
+    align-items: center;
 }
 
 main {
@@ -67,7 +68,8 @@ main {
     }
 
     main {
-        height: 200px;
+        margin: 50px;
+        height: 500px;
     }
 
     .menu-toggle-div {

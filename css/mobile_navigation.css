@@ -10,8 +10,8 @@
     }
 
     .menu-toggle-div {
-        display: flex;
-        justify-content: right;
+        width: 16vw;
+        height: 16vw;
         -webkit-tap-highlight-color: transparent;
     }
     
