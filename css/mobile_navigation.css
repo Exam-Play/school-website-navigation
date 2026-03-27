@@ -4,14 +4,6 @@
         padding: 0;
     }
 
-    header {
-        display: block;
-        height: 150px;
-        margin: 0;
-        padding: 0;
-        background-color: rgb(145, 203, 255);
-    }
-
     nav {
         display: none;
         justify-content: left;
