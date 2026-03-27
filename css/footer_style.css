@@ -1,10 +1,11 @@
 footer {
     background-color: #597BC0;
     color: #fff;
-    padding: 30px 20px 20px 20px;
+    padding: 40px 20px 20px 20px;
     display: flex;
     font-weight: bold;
     align-items: center;
+    overflow: hidden;
 }
 
 .max-icon {
@@ -32,4 +33,19 @@ footer {
 .info a {
     text-decoration: none;
     color: #fff;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 6vw 3vw 3vw 3vw;
+    }
+
+    .max-icon, .mail-icon, .vk-icon {
+        height: 8vw;
+        width: 8vw;
+    }
+
+    .info {
+        font-size: 3vw;
+    }
 }
