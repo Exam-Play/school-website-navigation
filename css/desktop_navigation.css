@@ -175,13 +175,13 @@ nav p {
     padding-left: 15px;
 }
 
-.columns ul li ul > * {
-    overflow: hidden;
-}
-
 .columns ul li.open > ul {
     opacity: 1;
     grid-template-rows: 1fr;
+}
+
+.columns ul li ul > * {
+    overflow: hidden;
 }
 
 .columns ul li ul div {
