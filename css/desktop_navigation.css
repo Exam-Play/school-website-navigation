@@ -40,6 +40,10 @@ nav {
     margin-top: 25px;
 }
 
+nav p {
+    margin: 0;
+}
+
 .menu-item {
     font-family: Inter, sans-serif;
     list-style: none;

@@ -1,8 +1,8 @@
 @media (max-width: 768px) {
     nav {
         display: none;
-        justify-content: left;
         font-size: 17px;
+        margin-top: 0;
     }
 
     .menu-item {
@@ -12,16 +12,6 @@
 
     .menu-item > li > a {
         padding: 0;
-        margin: 0;
-    }
-
-    .menu-item > li.open > .columns-wrapper > .columns-inner .columns {
-        flex-direction: column;
-        box-shadow: none;
-        gap: 0;
-
-        opacity: 1;
-        transform: translateY(0);
     }
 
     .columns-border {
@@ -30,8 +20,6 @@
 
     .columns { 
         position: relative;
-        top: 0;
-        left: 0;
         padding: 20px 0 0 10px;
         animation: none !important;
         box-shadow: none;
@@ -42,9 +30,13 @@
         transition: opacity 0.3s ease, transform 0.3s ease;
     }
 
-    .columns > ul:nth-child(2) {
-        margin-bottom: 10px;
-    }    
+    .menu-item > li.open .columns {
+        flex-direction: column;
+        gap: 10px;
+
+        opacity: 1;
+        transform: translateY(0);
+    }
 
     .columns-wrapper {
         display: grid;
@@ -58,10 +50,6 @@
 
     .columns-inner {
         overflow: hidden;
-    }
-
-    .columns ul li {
-        max-width: none;
     }
 
     .overlay {
@@ -84,7 +72,7 @@
         top: 0;
         right: -100%;
 
-        width: 350px;
+        width: 320px;
         max-width: 100%;
         box-sizing: border-box;
         height: 100%;

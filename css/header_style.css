@@ -34,13 +34,13 @@ main {
 }
 
 .school-info p {
+    margin: 0;
     font-size: 18px;
     font-weight: bold;
 }
 
 .school-logo-img img {
     width: 250px;
-    height: auto;
 }
 
 
@@ -92,16 +92,14 @@ main {
 
 
     /* Лого школы и название */
-    .school-logo-img {
-        width: 70%;
-    }
 
     .school-logo-img img {
-        width: 100%;
+        width: clamp(100px, 40vw, 250px);
     }
     
     .school-info p {
-        font-size: 3vw;
+        max-width: 360px;
+        font-size: clamp(9px, 3vw, 18px);
     }
 
 
@@ -123,8 +121,7 @@ main {
         display: flex;
         align-items: center;
         margin-left: auto;
-        padding-left: 50px;
-        width: clamp(60px, 15vw, 100px);
-        height: clamp(60px, 15vw, 100px);
+        width: clamp(60px, 16vw, 100px);
+        height: clamp(60px, 16vw, 100px);
     }
 }

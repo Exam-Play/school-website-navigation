@@ -3,6 +3,19 @@ const mobileMenu = document.querySelector('.menu');
 const overlay = document.querySelector('.overlay');
 const closeBtn = document.querySelector('.close-menu');
 
+window.addEventListener('resize', function() {
+    if (window.innerWidth <= 768) {
+        document.querySelector('.additional-education p').textContent = "Доп. образование";
+    } else {
+        document.querySelector('.additional-education p').textContent = "Дополнительное образование";
+    }
+});
+
+function closeMenu() {
+    mobileMenu.classList.remove('open');
+    overlay.classList.remove('open');
+}
+
 // открыть
 burger.addEventListener('click', () => {
     mobileMenu.classList.add('open');
@@ -14,12 +27,6 @@ closeBtn.addEventListener('click', closeMenu);
 
 // закрыть по клику на затемнение
 overlay.addEventListener('click', closeMenu);
-
-function closeMenu() {
-    mobileMenu.classList.remove('open');
-    overlay.classList.remove('open');
-}
-
 
 // Обработчик для пунктов меню верхнего уровня
 document.querySelectorAll('.menu-item > li > a').forEach(link => {
