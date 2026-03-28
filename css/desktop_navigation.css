@@ -30,8 +30,6 @@
 }
 
 
-
-
 /* Базовые стили */
 nav {
     display: flex;
@@ -62,7 +60,6 @@ nav p {
 }
 
 
-
 /* Общие стили для пунктов меню */
 .menu-item > li > a {
     display: flex;
@@ -74,7 +71,6 @@ nav p {
     border-radius: 22px;
     background: var(--main-color);
 }
-
 
 
 /* Стили для иконок */
@@ -94,8 +90,6 @@ nav p {
 }
 
 
-
-
 /* Border для каждой категории */
 .columns-border {
     position: absolute;
@@ -105,7 +99,6 @@ nav p {
     height: 3px;
     background-color: var(--main-color);
 }
-
 
 
 /* Двухколоночное меню */
@@ -144,7 +137,6 @@ nav p {
 }
 
 
-
 /* Стрелка */
 .arrow {
     margin-left: auto;
@@ -162,8 +154,6 @@ nav p {
 .columns ul li.open > a .arrow {
     transform: rotate(180deg);
 }
-
-
 
 
 /* Вложенные подменю */
@@ -195,7 +185,6 @@ nav p {
     color: #666;
     white-space: pre-wrap;
 }
-
 
 
 /* Ссылки в меню 2-3 уровня */
