@@ -1,23 +1,8 @@
 @media (max-width: 768px) {
-    body {
-        margin: 0;
-        padding: 0;
-    }
-
     nav {
         display: none;
         justify-content: left;
-    }
-
-    .menu-toggle-div {
-        width: 16vw;
-        height: 16vw;
-        -webkit-tap-highlight-color: transparent;
-    }
-    
-    .menu-toggle {
-        display: block;
-        padding: 10px;
+        font-size: 17px;
     }
 
     .menu-item {
@@ -49,12 +34,17 @@
         left: 0;
         padding: 20px 0 0 10px;
         animation: none !important;
+        box-shadow: none;
 
         display: block;
         opacity: 0;
         transform: translateY(-10px);
         transition: opacity 0.3s ease, transform 0.3s ease;
     }
+
+    .columns > ul:nth-child(2) {
+        margin-bottom: 10px;
+    }    
 
     .columns-wrapper {
         display: grid;
