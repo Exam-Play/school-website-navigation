@@ -1,8 +1,15 @@
-@media (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1280px) {
+    .mobile-menu-header .special {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1280px) {
     nav {
         display: none;
         font-size: 17px;
-        margin-top: 0;
+        margin: 0;
+        padding: 0;
     }
 
 
@@ -54,7 +61,7 @@
     }
 
 
-    /* Меню и крестик для выхода с оверлея*/
+    /* Меню, глаз и крестик для выхода с оверлея*/
     .mobile-menu-header {
         display: flex;
         justify-content: space-between;
@@ -67,7 +74,17 @@
     .mobile-menu-header .special {
         display: block;
         margin-right: 15px;
-        filter: invert(80%);
+        filter: invert(70%);
+    }
+
+    .mobile-menu-header .special {
+        display: block;
+        margin-right: 15px;
+        filter: invert(70%);
+    }
+
+    .mobile-menu-header .special img {
+        transform: scale(0.9);
     }
 
     .mobile-menu-header span {
@@ -80,6 +97,7 @@
     /* !!! Изменения для содержимого навигации !!! */
     /* 1 уровень навигации */
     .menu-item {
+        width: auto;
         padding: 0 20px;
         flex-direction: column;
     }
@@ -88,6 +106,19 @@
         padding: 0;
     }
 
+    .menu-item > li > a p {
+        font-size: 17px;
+    }
+
+    .icon-wrapper {
+        width: 45px;
+        height: 45px;
+    }
+
+    .icon-wrapper img {
+        width: 25px;
+        height: 25px;
+    }
 
     /* 2 уровень навигации */
     .columns-border {
@@ -95,6 +126,7 @@
     }
 
     .columns-wrapper {
+        position: relative;
         display: grid;
         grid-template-rows: 0fr;
         transition: grid-template-rows 0.4s ease;
@@ -120,6 +152,18 @@
         opacity: 0;
         transform: translateY(-10px);
         transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .columns ul {
+        width: 255px;
+    }
+
+    .columns ul li a {
+        font-size: 14px;
+    }
+
+    .columns ul li ul li a {
+        font-size: 13px;
     }
 
     .menu-item > li.open .columns {

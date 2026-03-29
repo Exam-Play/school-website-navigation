@@ -26,19 +26,4 @@
     .special {
         display: none;
     }
-
-
-    /* Кнопка "бургер" */
-    .menu-toggle {
-        display: block !important;
-        padding: 10px;
-    }
-
-    .menu-toggle-div {
-        display: flex;
-        align-items: center;
-        margin-left: auto;
-        width: clamp(60px, 16vw, 100px);
-        height: clamp(60px, 16vw, 100px);
-    }
 }

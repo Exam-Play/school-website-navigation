@@ -36,6 +36,10 @@ nav {
     justify-content: center;
     font-size: 18px;
     margin-top: 25px;
+
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
 }
 
 nav p {
@@ -49,10 +53,15 @@ nav p {
     gap: 20px;
     padding: 0;
     margin: 0;
+
+    width: 100%;
+    justify-content: center;
 }
 
 .menu-item > li {
     position: relative;
+    flex-shrink: 1;
+    min-width: 0;
 }
 
 .menu-toggle, .mobile-menu-header {
@@ -61,6 +70,12 @@ nav p {
 
 
 /* Общие стили для пунктов меню */
+.menu-item > li {
+    position: relative;
+    flex-shrink: 0; /* разрешаем сжатие */
+    min-width: auto;   /* позволяет flex-элементу уйти ниже content size */
+}
+
 .menu-item > li > a {
     display: flex;
     align-items: center;
@@ -72,11 +87,19 @@ nav p {
     background: var(--main-color);
 }
 
+.menu-item > li > a p {
+    font-size: clamp(11px, 1.1vw, 18px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
+}
+
 
 /* Стили для иконок */
 .icon-wrapper {
-    width: 45px;
-    height: 45px;
+    width: clamp(30px, 3vw, 45px);
+    height: clamp(30px, 3vw, 45px);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -85,8 +108,8 @@ nav p {
 }
 
 .icon-wrapper img {
-    width: 25px;
-    height: 25px;
+    width: clamp(20px, 1.6vw, 25px);
+    height: clamp(20px, 1.6vw, 25px);
 }
 
 
@@ -102,12 +125,22 @@ nav p {
 
 
 /* Двухколоночное меню */
-.columns {
+.columns-wrapper {
     position: absolute;
+}
+
+.menu-item > li:last-child .columns-wrapper {
+    left: auto;
+    right: 0;
+    transform: none;
+}
+
+.columns {
+    position: relative;
     display: none;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     border-radius: 10px;
-    padding: 25px 20px 20px 20px;
+    padding: clamp(12px, 1.5vw, 25px) clamp(10px, 1.5vw, 20px);
 
     animation: 0.5s fadeInUp;
 }
@@ -133,7 +166,7 @@ nav p {
     list-style: none;
     padding: 0;
     flex: 1;
-    min-width: 255px;
+    min-width: clamp(160px, 15vw, 255px);
 }
 
 
@@ -157,6 +190,19 @@ nav p {
 
 
 /* Вложенные подменю */
+.columns ul li a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    font-size: clamp(11px, 1vw, 14px);
+    margin: 5px 0;
+}
+
+.columns ul li a:hover {
+    color: var(--main-color);
+}
+
 .columns ul li ul {
     opacity: 0;
     display: grid;
@@ -181,22 +227,7 @@ nav p {
 }
 
 .columns ul li ul li a {
-    font-size: 13px;
+    font-size: clamp(10px, 0.9vw, 13px);
     color: #666;
     white-space: pre-wrap;
-}
-
-
-/* Ссылки в меню 2-3 уровня */
-.columns ul li a {
-    text-decoration: none;
-    color: #333;
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    margin: 5px 0;
-}
-
-.columns ul li a:hover {
-    color: var(--main-color);
 }
