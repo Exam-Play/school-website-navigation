@@ -3,13 +3,11 @@ const mobileMenu = document.querySelector('.menu');
 const overlay = document.querySelector('.overlay');
 const closeBtn = document.querySelector('.close-menu');
 
-window.addEventListener('resize', function() {
-    if (window.innerWidth <= 1600) {
-        document.querySelector('.additional-education p').textContent = "Доп. образование";
-    } else {
-        document.querySelector('.additional-education p').textContent = "Дополнительное образование";
-    }
-});
+if (window.innerWidth <= 1600) {
+    document.querySelector('.additional-education p').textContent = "Доп. образование";
+} else {
+    document.querySelector('.additional-education p').textContent = "Дополнительное образование";
+}
 
 function closeMenu() {
     mobileMenu.classList.remove('open');
