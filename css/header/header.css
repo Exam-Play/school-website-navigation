@@ -1,0 +1,54 @@
+@import "mobile_header.css";
+@import "tablet_header.css";
+
+header {
+    background-image: url("../../images/header/blue_background.jpg"); 
+    background-size: cover;
+    border-radius: 0 0 30px 30px;
+    color: white;
+    padding: 20px 80px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Лого школы и название */
+.school-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.school-info p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.school-logo-img img {
+    width: 250px;
+}
+
+
+/* Кнопка для слабовидящих */
+.special {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.special a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    gap: 10px;
+}
+
+.special p {
+    font-weight: bold;
+}
+
+#glazd {
+    width: 50px;
+}

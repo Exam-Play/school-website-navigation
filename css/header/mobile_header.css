@@ -1,0 +1,44 @@
+/* Для телефона */
+@media (max-width: 768px) {
+    header {
+        overflow: hidden;
+        padding: 20px 0;
+    }
+
+    main {
+        margin: 50px;
+        height: 500px;
+    }
+
+
+    /* Лого школы и название */
+    .school-logo-img img {
+        width: clamp(100px, 40vw, 250px);
+    }
+    
+    .school-info p {
+        max-width: 360px;
+        font-size: clamp(9px, 3vw, 18px);
+    }
+
+
+    /* Кнопка для слабовидящих */
+    .special {
+        display: none;
+    }
+
+
+    /* Кнопка "бургер" */
+    .menu-toggle {
+        display: block;
+        padding: 10px;
+    }
+
+    .menu-toggle-div {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        width: clamp(60px, 16vw, 100px);
+        height: clamp(60px, 16vw, 100px);
+    }
+}

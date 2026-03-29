@@ -1,0 +1,23 @@
+/* Для телефона */
+@media (max-width: 768px) {
+    footer {
+        padding: 5vw;
+    }
+
+
+    /* Иконки социальных сетей */
+    .icons {
+        max-height: 8vw;
+    }
+
+    .max-icon, .mail-icon, .vk-icon {
+        height: clamp(20px, 8vw, 60px);
+        width: clamp(20px, 8vw, 60px);
+    }
+
+
+    /* Телефоны и почта */
+    .info {
+        font-size: clamp(9px, 3vw, 18px);
+    }
+}

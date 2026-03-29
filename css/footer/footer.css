@@ -1,0 +1,33 @@
+@import "mobile_footer.css";
+
+footer {
+    background-color: #597BC0;
+    color: #fff;
+    padding: 30px 75px;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+
+/* Иконки социальных сетей */
+.icons {
+    margin-left: auto;
+    display: flex;
+    max-height: 60px;
+    gap: 10px;
+}
+
+.max-icon, .vk-icon, .mail-icon {
+    width: 60px;
+    height: 60px;
+}
+
+
+/* Телефоны и почта */
+.info a {
+    text-decoration: none;
+    color: #fff;
+}
