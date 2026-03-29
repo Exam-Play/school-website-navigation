@@ -14,3 +14,10 @@ main {
     border-radius: 35px;
     overflow: hidden;
 }
+
+@media (max-width: 768px) {
+    main {
+        margin: 50px;
+        height: 500px;
+    }
+}
