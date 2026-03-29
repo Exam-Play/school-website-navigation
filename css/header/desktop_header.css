@@ -1,6 +1,3 @@
-@import "mobile_header.css";
-@import "tablet_header.css";
-
 header {
     background-image: url("../../images/header/blue_background.jpg"); 
     background-size: cover;

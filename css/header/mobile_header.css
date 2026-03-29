@@ -30,7 +30,7 @@
 
     /* Кнопка "бургер" */
     .menu-toggle {
-        display: block;
+        display: block !important;
         padding: 10px;
     }
 
